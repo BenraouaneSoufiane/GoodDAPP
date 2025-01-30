@@ -5,7 +5,7 @@
       "l10n_master": false
     }
   },
-  "installCommand": "npm install --cache-min 999999",
+  "installCommand": "yarn install --frozen-lockfile",
   "env": {
     "NODE_ENV": "development",
     "NODE_OPTIONS": "--openssl-legacy-provider"
