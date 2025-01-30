@@ -3,7 +3,7 @@
     "deploymentEnabled": {
       "l10n_master": false
     }
-  }
+  },
   "version": 2,
   "builds": [
     {
