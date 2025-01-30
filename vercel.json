@@ -4,4 +4,12 @@
       "l10n_master": false
     }
   }
+  "version": 2,
+  "builds": [
+    {
+      "src": "your-build-script.sh",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "installCommand": "echo 'Skipping dependency installation'"
 }
