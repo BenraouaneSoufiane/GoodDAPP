@@ -11,7 +11,7 @@
       "use": "@vercel/static-build"
     }
   ],
-  "installCommand": "echo 'Skipping dependency installation'"
+  "installCommand": "echo 'Skipping dependency installation'",
   "scripts": {
     "build": "yarn run lingui:compile --force && vite"
   }
