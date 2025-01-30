@@ -5,12 +5,11 @@
     }
   },
   "version": 2,
-  "builds": [
-    {
-      "src": "your-build-script.sh",
-      "use": "@vercel/static-build"
-    }
-  ],
+  "install": false,
+  "env": {
+    "NODE_ENV": "development",
+    "NODE_OPTIONS": "--openssl-legacy-provider"
+  }
   "installCommand": "echo 'Skipping dependency installation'",
   "scripts": {
     "build": "yarn run lingui:compile --force && vite"
