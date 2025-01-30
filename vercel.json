@@ -12,4 +12,7 @@
     }
   ],
   "installCommand": "echo 'Skipping dependency installation'"
+  "scripts": {
+    "build": "yarn run lingui:compile --force && vite"
+  }
 }
