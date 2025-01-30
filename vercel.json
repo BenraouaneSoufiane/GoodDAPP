@@ -5,8 +5,20 @@
       "l10n_master": false
     }
   },
+  "builds": [
+    {
+      "src": "**/*",
+      "use": "@vercel/static-build",
+      "config": {
+        "command": "npx vite"
+      }
+    }
+  ],
+  "installCommand": "yarn install --cache",
   "env": {
     "NODE_ENV": "development",
-    "NODE_OPTIONS": "--openssl-legacy-provider"
+    "NODE_OPTIONS": "--openssl-legacy-provider",
+    "CACHE_DEPENDENCIES": "true"
+
   }
 }
