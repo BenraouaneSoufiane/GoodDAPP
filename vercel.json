@@ -14,8 +14,5 @@
   "env": {
     "NODE_ENV": "development",
     "NODE_OPTIONS": "--openssl-legacy-provider"
-  },
-  "scripts": {
-    "build": "yarn run lingui:compile --force && vite"
   }
 }
