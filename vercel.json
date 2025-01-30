@@ -1,11 +1,16 @@
 {
+  "version": 2,
   "git": {
     "deploymentEnabled": {
       "l10n_master": false
     }
   },
-  "version": 2,
-  "install": false,
+  "builds": [
+    {
+      "src": "your-build-script.sh",
+      "use": "@vercel/static-build"
+    }
+  ],
   "env": {
     "NODE_ENV": "development",
     "NODE_OPTIONS": "--openssl-legacy-provider"
