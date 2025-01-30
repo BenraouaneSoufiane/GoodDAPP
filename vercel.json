@@ -5,12 +5,7 @@
       "l10n_master": false
     }
   },
-  "builds": [
-    {
-      "src": "your-build-script.sh",
-      "use": "@vercel/static-build"
-    }
-  ],
+  "installCommand": "npm install --cache-min 999999",
   "env": {
     "NODE_ENV": "development",
     "NODE_OPTIONS": "--openssl-legacy-provider"
